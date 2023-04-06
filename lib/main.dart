@@ -5,12 +5,15 @@ void main() {
     MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-
         backgroundColor: Colors.purple,
         appBar: AppBar(
           centerTitle: true,
-          title: const Text('Dicee',
-          style: TextStyle(fontFamily: 'Pacifico',),),
+          title: const Text(
+            'Dicee',
+            // style: TextStyle(
+            //   fontFamily: 'Pacifico',
+            // ),
+          ),
           backgroundColor: Colors.purple,
         ),
         body: const DiceApp(),
@@ -18,11 +21,25 @@ void main() {
     ),
   );
 }
+
 class DiceApp extends StatelessWidget {
   const DiceApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Row(
+      children: <Widget>[
+        Expanded(
+          child: Image.asset(
+            'images/dice1.png',
+          ),
+        ),
+        Expanded(
+          child: Image.asset(
+            'images/dice1.png',
+          ),
+        ),
+      ],
+    );
   }
 }
