@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 void main() {
   return runApp(
-    MaterialApp(
+    addMaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.purple,
@@ -31,16 +31,20 @@ class DiceApp extends StatelessWidget {
       child: Row(
         children: <Widget>[
           Expanded(
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
+            child: TextButton(
+              onPressed: (){
+               print('Left button pressed');
+              },
               child: Image.asset(
                 'images/dice1.png',
               ),
             ),
           ),
           Expanded(
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
+            child: TextButton(
+              onPressed: (){
+                print('Right side clicked');
+              },
               child: Image.asset(
                 'images/dice1.png',
               ),
