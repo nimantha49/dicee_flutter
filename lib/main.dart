@@ -11,9 +11,6 @@ void main() {
           centerTitle: true,
           title: const Text(
             'Dicee',
-            // style: TextStyle(
-            //   fontFamily: 'Pacifico',
-            // ),
           ),
           backgroundColor: Colors.purple,
         ),
